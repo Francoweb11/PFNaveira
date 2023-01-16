@@ -1,0 +1,74 @@
+/* reset */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: auto; 
+}
+/* fin reset */
+
+//fondo
+body{
+    background: linear-gradient(to top, rgb(146, 64, 253), rgb(211, 143, 250));
+}
+//fin fondo
+
+//navbar
+nav{
+    /*background-color: rgba(62, 5, 116, 0.849);
+    */padding: 8px 0px;
+    /* posicion*/
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* ajuste */
+    display: flex; /* separa el logo de las li*/
+    align-items: center; /* centra el logo y las li */
+    justify-content: space-between;     
+
+    div{ 
+    /*background-color: rgba(62, 5, 116, 0.849);*/
+    padding: 8px 0px;
+    /* posicion*/ 
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* ajuste */
+    display: flex; /* separa el logo de las li*/
+    align-items: center; /* centra el logo y las li */
+    justify-content: space-between;  
+    }
+    a{
+        padding: 0px 10px;
+    }
+    ul li a{
+        color:yellow;
+        font-size: 1.2em;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        font-weight: 300;
+        list-style: none; /*quita el punto de la A */
+    }
+    nav ul li a:hover{
+        color: white;
+    }
+    nav ul li a:hover{
+                    
+        transform: scale(1.05);
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    nav a:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+        transition: all 0.9s;
+    }
+}
+
+footer a img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: all 0.9s;
+}

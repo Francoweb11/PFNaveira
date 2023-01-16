@@ -87,7 +87,10 @@ nav div{
                     transition: all 0.9s;
                 }
 
-
+    p{
+        font-size: 1.5em;
+        padding: 8px 10px;
+    }
 
     header div{
         background: linear-gradient(to top, rgb(216, 216, 2), rgb(247, 247, 118));
