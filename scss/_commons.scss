@@ -22,9 +22,12 @@ nav div{
     left: 0;
     width: 100%;
     /* ajuste */
-    display: flex; /* separa el logo de las li*/
-    align-items: center; /* centra el logo y las li */
-    justify-content: space-between;  
+    .mixin-flex{
+        @include flex (space-between, center);
+    }
+    /*display: flex; /* separa el logo de las li*/
+    /*align-items: center; /* centra el logo y las li */
+    /*justify-content: space-between;  */
 }
 
     nav{
@@ -36,12 +39,15 @@ nav div{
         left: 0;
         width: 100%;
         /* ajuste */
-        display: flex; /* separa el logo de las li*/
-        align-items: center; /* centra el logo y las li */
-        justify-content: space-between;
+        .mixin-flex{
+            @include flex (space-between, center);
+        }
+       /* display: flex; /* separa el logo de las li*/
+        /*align-items: center; /* centra el logo y las li */
+        /*justify-content: space-between;*/
             ul{
                 /* display */
-                display: flex
+                display: flex;
                 /* margin */
             }
                 li a{
@@ -125,9 +131,12 @@ footer div p{
     left: 0;
     width: 100%;
     /* ajuste */
-    display: flex; /* separa el logo de las li*/
-    align-items: center; /* centra el logo y las li */
-    justify-content: space-between; 
+    .mixin-flex{
+        @include flex (space-between, center);
+    }
+   /* display: flex; /* separa el logo de las li*/
+    /*align-items: center; /* centra el logo y las li */
+    /*justify-content: space-between; 
     color:yellow;
     
     font-family: $globalFont;
@@ -148,6 +157,9 @@ footer div p{
             }
 }
 
+.mixin-flex{
+    @include flex (space-between, center);
+}
 
 .text-end{
     text-align: end;
