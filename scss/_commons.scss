@@ -1,33 +1,19 @@
-/* reset */
+//reset
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: $globalFont;
     margin: 0;
     padding: 0;
     height: auto; 
 }
 /* fin reset */
 
-//fondo
 body{
-    background: linear-gradient(to top, rgb(146, 64, 253), rgb(211, 143, 250));
+    background: $bodyColor;
 }
-//fin fondo
 
-//navbar
-nav{
-    /*background-color: rgba(62, 5, 116, 0.849);
-    */padding: 8px 0px;
-    /* posicion*/
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* ajuste */
-    display: flex; /* separa el logo de las li*/
-    align-items: center; /* centra el logo y las li */
-    justify-content: space-between;     
 
-    div{ 
+
+nav div{ 
     /*background-color: rgba(62, 5, 116, 0.849);*/
     padding: 8px 0px;
     /* posicion*/ 
@@ -39,36 +25,375 @@ nav{
     display: flex; /* separa el logo de las li*/
     align-items: center; /* centra el logo y las li */
     justify-content: space-between;  
-    }
-    a{
-        padding: 0px 10px;
-    }
-    ul li a{
-        color:yellow;
-        font-size: 1.2em;
-        font-family: 'Roboto', sans-serif;
-        text-decoration: none;
-        font-weight: 300;
-        list-style: none; /*quita el punto de la A */
-    }
-    nav ul li a:hover{
-        color: white;
-    }
-    nav ul li a:hover{
-                    
-        transform: scale(1.05);
-        cursor: pointer;
-        transition: all 0.5s;
-    }
-    nav a:hover{
-        transform: scale(1.05);
-        cursor: pointer;
-        transition: all 0.9s;
-    }
 }
+
+    nav{
+        /*background-color: rgba(62, 5, 116, 0.849);
+        */padding: 8px 0px;
+        /* posicion*/
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* ajuste */
+        display: flex; /* separa el logo de las li*/
+        align-items: center; /* centra el logo y las li */
+        justify-content: space-between;
+            ul{
+                /* display */
+                display: flex
+                /* margin */
+            }
+                li a{
+                    padding: 0px 10px;
+                }
+                    a{
+                        color:yellow;
+                        font-size: 1.2em;
+                        font-family: $navaFont;
+                        text-decoration: none;
+                        font-weight: 300;
+                        list-style: none; /*quita el punto de la A */
+                    } 
+                        a:hover{
+                            color: white;
+                        }
+                            a:hover{
+                                transform: scale(1.05);
+                                cursor: pointer;
+                                transition: all 0.5s;
+                            }
+                                a:hover{
+                                    transform: scale(1.05);
+                                    cursor: pointer;
+                                    transition: all 0.9s;
+                                }
+    }
+
 
 footer a img:hover{
     transform: scale(1.05);
     cursor: pointer;
     transition: all 0.9s;
 }
+
+p{
+    font-size: 1.5em;
+    padding: 8px 10px;
+}
+
+header div{
+    background: $headerColor;
+}
+
+main h1{
+    font-family: $h1Font;
+    color:rgba(78, 1, 114, 0.959)
+}
+
+section h2{
+    color: rgba(62, 5, 116, 0.849);
+    font-family: $h2Font;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+section{
+    padding: 8px 10px;
+}
+
+section figure{
+    text-align: center;
+}
+    
+footer div p{
+    color: rgba(62, 5, 116, 0.849);
+}
+
+
+
+
+/* Selectores de clase */
+#botonera{
+    background-color: rgba(62, 5, 116, 0.849);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* ajuste */
+    display: flex; /* separa el logo de las li*/
+    align-items: center; /* centra el logo y las li */
+    justify-content: space-between; 
+    color:yellow;
+    
+    font-family: $globalFont;
+    text-decoration: none;
+    font-weight: 300;
+    list-style: none; /*quita el punto de la A */
+    
+    text-transform: capitalize; 
+    margin-right: 15px;
+    padding-left: 10px;
+        ul li a{
+            color:yellow;
+            font-size: 1.2em;
+            padding-left: 20px
+            }
+            ul li a:hover{
+                color: white;
+            }
+}
+
+
+.text-end{
+    text-align: end;
+}
+
+.text-start{
+    text-align: start;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.bg-yellow{
+    background-color: rgb(228, 228, 2);
+}
+
+.bg-violet1{
+    background-color: rgba(62, 5, 116, 0.849);
+}
+.bg-violet{
+    background-color: rgba(62, 5, 116, 0.7);
+}
+
+
+.img-fluid{
+    width: 40%
+}
+
+.img-center{
+    display: flex;
+    justify-content: center;
+}
+
+.d-flex{
+    display: flex;
+}
+
+
+/* Selectores de bloque BEM*/
+/*Box model - whidth - height - margin - padding - borde */
+.noticia_articulo{
+    margin: 50px auto;  
+}
+
+.noticia_form{
+    margin: 20px;
+}
+
+.border_from{
+    border-style: solid;
+    color: rgba(78, 1, 114, 0.959)
+}
+
+.padding_img{
+    padding: 5px
+}
+
+.column{
+    flex: 30%;
+    padding: 5px;
+}
+
+.padding_form{
+    padding: 8px 20px;
+}
+
+/* FLEX BOX */
+/* width*/
+.w-25{
+    width: 25%;
+}
+
+.w-33{
+    width: 33%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-75{
+    width: 75%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+/* wrap*/
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-around{
+    justify-content: space-around;
+}
+
+.align-content{
+    align-content: center;
+}
+
+.align-items{
+    align-items: center;
+}
+
+/* GRID */
+
+/*media*/
+.nav{
+    grid-area: nav;
+}
+
+.header{
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+}
+
+.h1{
+    grid-area: h1;
+}
+.footer{
+    grid-area: footer;
+}
+
+.form{
+    grid-area: form;
+}
+
+.fig1{
+    grid-area: fig1;
+}
+
+.fig2{
+    grid-area: fig2;
+}
+
+.fig3{
+    grid-area: fig3;
+}
+
+.fig4{
+    grid-area: fig4;
+}
+
+
+/*GRID rosponsive Home*/
+#contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 20vh 20vh 20vh 40vh 30vh;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "from"
+    "footer"
+    ;
+}
+
+
+@media (min-width:768px){
+    #contenedor-grid{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 20vh 40vh 20vh 40vh 40vh;
+        grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "main main main"
+        "from from from"
+        "footer footer footer";
+    }
+
+    main{
+        padding: 3em 0px;
+    }
+    footer{
+        padding: 5em 0px;
+    }
+}
+
+@media (min-width:1024px){
+    #contenedor-grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 20vh 40vh 20vh 40vh 30vh;
+        grid-template-areas: 
+        "nav nav nav nav"
+        "header header header header"
+        "main main main main"
+        "form from from from"
+        "footer footer footer footer";
+    }
+    main{
+        padding: 3em 0px;
+    }
+    footer{
+        padding: 5em 0px;
+    }
+
+}
+
+/* GRID responsive Títulos*/
+.contenedor-grid-fig{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 4fr;
+    grid-template-areas: 
+    "fig1" 
+    "fig2"
+    "fig3"
+    "fig4";
+}
+
+@media (min-width:768px){
+    .contenedor-grid-fig{
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: 3fr;
+        grid-template-areas: 
+        "fig1 fig2" 
+        "fig3 fig3"
+        "fig4 fig4";    
+    }
+    section div img{
+        width: 50%;
+    }
+}
+
+@media (min-width:1024px){
+    .contenedor-grid-fig{
+        grid-template-columns: repeat(3,3fr);
+        grid-template-rows: 2fr;
+        grid-template-areas: 
+        "fig1 fig2 fig3" 
+        ". fig4 .";  
+    }
+}
+
