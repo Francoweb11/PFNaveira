@@ -13,7 +13,6 @@ body {
 }
 
 nav div {
-  /*background-color: rgba(62, 5, 116, 0.849);*/
   padding: 8px 0px;
   /* posicion*/
   position: sticky;
@@ -27,8 +26,6 @@ nav div {
 }
 
 nav {
-  /*background-color: rgba(62, 5, 116, 0.849);
-  */
   padding: 8px 0px;
   /* posicion*/
   position: sticky;

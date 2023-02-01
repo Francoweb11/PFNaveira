@@ -14,7 +14,6 @@ body{
 
 
 nav div{ 
-    /*background-color: rgba(62, 5, 116, 0.849);*/
     padding: 8px 0px;
     /* posicion*/ 
     position: sticky;
@@ -25,14 +24,10 @@ nav div{
     .mixin-flex{
         @include flex (space-between, center);
     }
-    /*display: flex; /* separa el logo de las li*/
-    /*align-items: center; /* centra el logo y las li */
-    /*justify-content: space-between;  */
 }
 
     nav{
-        /*background-color: rgba(62, 5, 116, 0.849);
-        */padding: 8px 0px;
+        padding: 8px 0px;
         /* posicion*/
         position: sticky;
         top: 0;
@@ -42,9 +37,7 @@ nav div{
         .mixin-flex{
             @include flex (space-between, center);
         }
-       /* display: flex; /* separa el logo de las li*/
-        /*align-items: center; /* centra el logo y las li */
-        /*justify-content: space-between;*/
+
             ul{
                 /* display */
                 display: flex;
@@ -94,7 +87,7 @@ header div{
 
 main h1{
     font-family: $h1Font;
-    color:rgba(78, 1, 114, 0.959)
+    color:rgba(78, 1, 114, 0.959);
 }
 
 section h2{
@@ -134,27 +127,17 @@ footer div p{
     .mixin-flex{
         @include flex (space-between, center);
     }
-   /* display: flex; /* separa el logo de las li*/
-    /*align-items: center; /* centra el logo y las li */
-    /*justify-content: space-between; 
-    color:yellow;
-    
-    font-family: $globalFont;
-    text-decoration: none;
-    font-weight: 300;
-    list-style: none; /*quita el punto de la A */
-    
-    text-transform: capitalize; 
-    margin-right: 15px;
-    padding-left: 10px;
-        ul li a{
-            color:yellow;
-            font-size: 1.2em;
-            padding-left: 20px
+        text-transform: capitalize; 
+        margin-right: 15px;
+        padding-left: 10px;
+            ul li a{
+                color:yellow;
+                font-size: 1.2em;
+                padding-left: 20px
             }
-            ul li a:hover{
-                color: white;
-            }
+                ul li a:hover{
+                    color: white;
+                }
 }
 
 .mixin-flex{
@@ -183,7 +166,6 @@ footer div p{
 .bg-violet{
     background-color: rgba(62, 5, 116, 0.7);
 }
-
 
 .img-fluid{
     width: 40%
@@ -316,7 +298,6 @@ footer div p{
     grid-area: fig4;
 }
 
-
 /*GRID rosponsive Home*/
 #contenedor-grid{
     display: grid;
@@ -331,7 +312,6 @@ footer div p{
     ;
 }
 
-
 @media (min-width:768px){
     #contenedor-grid{
         grid-template-columns: repeat(3,1fr);
@@ -343,7 +323,6 @@ footer div p{
         "from from from"
         "footer footer footer";
     }
-
     main{
         padding: 3em 0px;
     }
